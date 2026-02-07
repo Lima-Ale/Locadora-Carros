@@ -1,0 +1,568 @@
+/* Importa uma fonte externa do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+
+/* Importa outra fonte externa com vários pesos */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+.Strada {
+    width: 45%;
+}
+.Mobi {
+    width: 50%;
+}
+.civic {
+    width: 50%;
+}
+.hb20 {
+    width: 50%;
+}
+
+html {
+    background-color: #f5f5f5;     /* Cinza muito claro */
+}
+
+.header {
+    padding: 32px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    background-color: #1a2332;     /* Azul escuro (cor automotiva) */
+}
+
+.logomarca {
+    width: 12vw;
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 4rem;
+    color: #1a2332;                /* Azul escuro */
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.links-navegacao {
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+}
+
+.links-navegacao li a {
+    padding: 0;
+    margin: 16;
+    color: #fbfbfb;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+li.cadastrar a {
+    padding: 8px;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid #e63946;     /* Vermelho automotivo */
+    background-color: #e63946;
+}
+
+li.cadastrar a:hover {
+    font-size: 1.4rem;
+    transition: 0.5s;
+    padding: 10px 13px;
+}
+
+/* ================= PAINEL PRINCIPAL ================= */
+
+.painel-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 128px;
+    margin-top: 20px;
+}
+
+/* Container das imagens */
+.img-petz {
+    display: flex;
+    gap: 15px;                      /* Espaço entre as colunas */
+    width: 50%;                     /* Ocupa metade da tela */
+}
+
+/* Coluna da esquerda com 2 imagens */
+.fotos-da-esquerda {
+    display: flex;
+    flex-direction: column;         /* Empilha verticalmente */
+    gap: 15px;                      /* Espaço entre as imagens */
+    width: 50%;                     /* Metade do container */
+}
+
+/* Coluna da direita com 2 imagens */
+.fotos-da-direita {
+    display: flex;
+    flex-direction: column;         /* Empilha verticalmente */
+    gap: 15px;                      /* Espaço entre as imagens */
+    width: 50%;                     /* Metade do container */
+}
+
+/* Todas as imagens dos carros */
+.Strada,
+.Mobi,
+.civic,
+.moto {
+    width: 100%;                    /* Ocupa toda a largura do container */
+    height: 200px;                  /* Altura fixa */
+    object-fit: cover;              /* Cobre sem distorcer */
+    border-radius: 8px;             /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.anuncio-veiculos {
+    width: 45%;                     /* Ajustado para dar espaço às imagens */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.botao-principal {
+    padding: 16px 32px;
+    background-color: #e63946;
+    border-radius: 10px;
+    color: #f5f5f5;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "mochiy pop one", sans-serif;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+    margin-left: 0;                 /* Remove margem desnecessária */
+    display: flex;
+}
+
+.botao-principal:hover {
+    background-color: #c92a35;
+    transition: 0.3s;
+}
+
+.descricao {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 2rem;
+    color: #2d3436;
+}
+
+/* ================= SEGUNDA SEÇÃO ================= */
+
+.segunda-secao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #dfe6e9;
+    height: 500px;
+    padding: 40px 20px;            /* Adiciona padding */
+}
+
+/* Cards de categorias */
+.pickup, 
+.hatch,
+.seda, 
+.motos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;                      /* Aumenta espaço entre imagem e botão */
+}
+
+/* IMAGENS DAS CATEGORIAS - TAMANHO UNIFORME */
+.pickup img
+{
+    max-width: 92%;                   /* Largura fixa igual aos botões */
+    height: 200px;                  /* Altura fixa */
+    object-fit: cover;              /* Cobre o espaço sem distorcer */
+    border-radius: 8px;             /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave */
+}
+
+.hatch img,
+.seda img
+{
+    max-width: 280;                   /* Largura fixa igual aos botões */
+    height: 200px;                  /* Altura fixa */
+    object-fit: cover;              /* Cobre o espaço sem distorcer */
+    border-radius: 8px;             /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave */
+}
+
+
+.motos img{
+    max-width: 98%;                   /* Largura fixa igual aos botões */
+    height: 200px;                  /* Altura fixa */
+    object-fit: cover;              /* Cobre o espaço sem distorcer */
+    border-radius: 8px;             /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave */
+}
+
+/* Botões das categorias */
+.botao_pickup, 
+.botao_hatch,
+.botao_seda, 
+.botao_motos {
+    font-size: 19px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    width: 280px;
+    padding: 15px 0;
+    background-color: #2d3436;
+    color: #f5f5f5;
+    border-radius: 10px;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Hover dos botões */
+.botao_pickup:hover, 
+.botao_hatch:hover, 
+.botao_seda:hover,
+.botao_motos:hover {
+    background-color: #e63946;
+    transform: scale(1.05);
+}
+
+/* ================= TERCEIRA SEÇÃO ================= */
+
+/* Seção que contém os depoimentos */
+.terceira-secao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    padding: 40px 20px;
+}
+
+/* Estilo do título h2 (Depoimentos) */
+h2{
+    font-family:'Mochiy Pop One', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #1a2332;                /* Azul escuro */
+}
+
+/* Container que agrupa os cards de depoimentos */
+.conteudos{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card individual de depoimento */
+.depoimentos{
+    display: flex;
+    width: 450px;
+    max-width: 90vw;
+    height: auto;
+    min-height: 200px;
+    background-color: #ffffff;     /* Branco limpo */
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #dfe6e9;     /* Borda cinza clara */
+}
+
+/* Imagem dentro do card */
+.depoimentos img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* Área do texto dentro do card */
+.depoimento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+/* Texto do depoimento */
+.depoimento p{
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #2d3436;                /* Cinza escuro */
+}
+
+/* Nome do cliente */
+.depoimento strong{
+    font-size: 0.85em;
+    color: #1a2332;                /* Azul escuro */
+    font-weight: 600;
+}
+
+/* ================= RODAPÉ ================= */
+
+/* Estilo geral do rodapé */
+.rodape{
+    background-color: #1a2332;     /* Azul escuro */
+}
+
+/* Conteúdo interno do rodapé */
+.conteudo-rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 12px;
+    font-weight: 500;
+    color: #f5f5f5;                /* TEXTO BRANCO */
+}
+
+/* Lista de informações do rodapé */
+.lista ul{
+    font-family:'Mochiy Pop One', sans-serif;
+    font-size: 1.2em;
+    color: #f5f5f5;                /* TEXTO BRANCO */
+    list-style: none;              /* Remove marcadores */
+}
+
+.lista ul li{
+    color: #f5f5f5;                /* TEXTO BRANCO nos itens */
+    margin-bottom: 8px;            /* Espaçamento entre itens */
+}
+
+/* Título "Sobre nós:" */
+.lista h3,
+.rodape h3{
+    color: #f5f5f5;                /* TEXTO BRANCO */
+    margin-bottom: 10px;
+}
+
+/* Área das redes sociais */
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #f5f5f5 !important;
+    gap: 10px;
+}
+
+/* Título "Nossas redes sociais:" */
+.redes-sociais h3{
+    color: #f5f5f5 !important;     /* TEXTO BRANCO */
+}
+
+/* Ícones das redes sociais */
+.redes-sociais a{
+    color: #f5f5f5;                /* ÍCONES BRANCOS */
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover{
+    color: #e63946;                /* Vermelho no hover */
+}
+
+/* Se você usa Font Awesome ou ícones SVG */
+.redes-sociais svg,
+.redes-sociais i{
+    color: #f5f5f5;                /* ÍCONES BRANCOS */
+    fill: #f5f5f5;                 /* Para SVGs */
+}
+
+/* Texto de direitos autorais */
+.copyright{
+    padding-bottom: 16px;
+    text-align: center;
+    color: #f5f5f5;                /* TEXTO BRANCO */
+    background-color: #1a2332;     /* Garante fundo escuro */
+}
+
+/* ================= RESPONSIVIDADE MOBILE ================= */
+
+/* Esconde o checkbox do menu hambúrguer */
+#menu-check {
+    display: none;
+}
+
+/* Regras que só funcionam em telas até 768px */
+@media (max-width: 768px) {
+
+    /* Ícone do menu hambúrguer */
+    .menu-burguer {
+        display: block;
+        cursor: pointer;
+        order: 2;
+    }
+
+    /* Cada linha do ícone hambúrguer */
+    .menu-burguer span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.3s;
+    }
+
+    /* Menu de navegação no mobile */
+    .links-navegacao {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        background-color: #1a2332;  /* Azul escuro */
+        padding: 20px 0;
+        text-align: center;
+        z-index: 10;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Mostra o menu quando o checkbox estiver marcado */
+    #menu-check:checked ~ .links-navegacao {
+        display: flex;
+    }
+
+    /* Espaçamento entre os links no mobile */
+    .links-navegacao li {
+        margin: 15px 0;
+    }
+
+    /* Logo maior no mobile */
+    .logomarca {
+        width: 35vw;
+    }
+
+    /* Seção principal no mobile */
+    .painel-principal {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    /* Texto principal ocupa tudo */
+    .anuncio-petz {
+        width: 100%;
+        align-items: center;
+    }
+
+    /* Ajuste do título no mobile */
+    .titulo {
+        font-size: 28px;
+        line-height: 2.2rem;
+    }
+
+    /* Ajuste do texto no mobile */
+    .descricao {
+        font-size: 18px;
+    }
+
+    /* Centraliza o botão */
+    .botao-principal {
+        margin-left: 0;
+    }
+
+    /* Esconde imagens no mobile */
+    .imagens-petz {
+        display: none;
+    }
+
+    /* Segunda seção empilhada */
+    .segunda-secao {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+        gap: 30px;
+    }
+
+    /* Terceira seção adaptável */
+    .terceira-secao {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    /* Depoimentos empilhados */
+    .conteudos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Card de depoimento no mobile */
+    .depoimentos {
+        width: 90%;
+        height: auto;
+        min-height: 150px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    /* Texto ocupa todo o espaço */
+    .depoimento {
+        width: 100%;
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    /* Imagem do depoimento */
+    .depoimentos img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    /* Texto do depoimento */
+    .depoimento p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    /* Rodapé empilhado no mobile */
+    .conteudo-rodape {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    /* Remove padding padrão da lista */
+    .lista ul {
+        padding: 0;
+    }
+}
