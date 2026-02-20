@@ -1,8 +1,5 @@
-/* Importa uma fonte externa do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
-
-/* Importa outra fonte externa com vários pesos */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
     margin: 0;
@@ -11,79 +8,89 @@
     box-sizing: border-box;
 }
 
-.Strada {
-    width: 45%;
-}
-.Mobi {
-    width: 50%;
-}
-.civic {
-    width: 50%;
-}
-.hb20 {
-    width: 50%;
-}
+html { background-color: #f5f5f5; }
 
-html {
-    background-color: #f5f5f5;     /* Cinza muito claro */
-}
-
+/* --- AJUSTE HEAD --- */
 .header {
-    padding: 32px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-    background-color: #1a2332;     /* Azul escuro (cor automotiva) */
-}
+    padding: 10px 0; /* Head mais agradável e fino */
+    background-color: #0a192f;     /* Azul escuro */
 
-.logomarca {
-    width: 12vw;
-}
-
-.titulo {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 4rem;
-    color: #1a2332;                /* Azul escuro */
-    font-family: "Mochiy Pop One", sans-serif;
 }
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza logo e nome */
     align-items: center;
+    gap: 15px;
     width: 85%;
     margin: 0 auto;
 }
 
+.logomarca {
+    width: 100px; /* Tamanho fixo mais agradável para um selo */
+    height: auto;
+    display: block;
+    object-fit: contain;
+    filter: contrast(110%);   /* Opcional: realça o prateado do selo */
+}
+
+.nome-marca {
+    color: white;
+    padding-top: 19px;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size: 1.8rem;
+}
+
+/* --- NOVA FAIXA DE ACESSO --- */
+.faixa-acesso {
+    background-color: #dbe6f6; /* Cor leve */
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.container-acesso {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end; /* Botões à direita */
+}
+
 .links-navegacao {
     display: flex;
-    gap: 32px;
-    list-style-type: none;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
 }
 
 .links-navegacao li a {
-    padding: 0;
-    margin: 16;
-    color: #fbfbfb;
+    color: #1a2332;
     text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 0.95rem;
 }
 
+.btn-entrar:hover { 
+    padding: 6px 16px;
+    border-radius: 6px;
+    background-color: #64e639;
+    color: #0f0652 !important;
+    transition: 0.3s;
+ }
+
 li.cadastrar a {
-    padding: 8px;
-    margin: 0;
-    border-radius: 10px;
-    border: 1px solid #e63946;     /* Vermelho automotivo */
+    padding: 6px 16px;
+    border-radius: 6px;
     background-color: #e63946;
+    color: #fff !important;
+    transition: 0.3s;
 }
 
 li.cadastrar a:hover {
-    font-size: 1.4rem;
-    transition: 0.5s;
-    padding: 10px 13px;
+    background-color: #c92a35;
+    padding: 6px 20px;
 }
 
-/* ================= PAINEL PRINCIPAL ================= */
+/* --- PAINEL PRINCIPAL (Ajustes de espaçamento) --- */
 
 .painel-principal {
     display: flex;
@@ -140,7 +147,7 @@ li.cadastrar a:hover {
 }
 
 .botao-principal {
-    padding: 16px 32px;
+    padding: 10px 20px;
     background-color: #e63946;
     border-radius: 10px;
     color: #f5f5f5;
@@ -225,9 +232,9 @@ li.cadastrar a:hover {
 .botao_motos {
     font-size: 19px;
     font-family: 'Mochiy Pop One', sans-serif;
-    width: 280px;
-    padding: 15px 0;
-    background-color: #2d3436;
+    width: 120px;
+    padding: 7px 0;
+    background-color: #404344;
     color: #f5f5f5;
     border-radius: 10px;
     border: 1px solid #f5f5f5;
@@ -334,7 +341,8 @@ h2{
 
 /* Estilo geral do rodapé */
 .rodape{
-    background-color: #1a2332;     /* Azul escuro */
+    background-color: #0a192f;     /* Azul escuro */
+
 }
 
 /* Conteúdo interno do rodapé */
@@ -408,6 +416,55 @@ h2{
     text-align: center;
     color: #f5f5f5;                /* TEXTO BRANCO */
     background-color: #1a2332;     /* Garante fundo escuro */
+}
+
+
+/* --- BOTÕES FLUTUANTES --- */
+.botoes-flutuantes {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.btn-flutuante {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-flutuante:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo específico do botão Voltar */
+.voltar {
+    background-color: #093f91; /* Mesmo azul do seu header atual */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+/* Estilo específico do botão WhatsApp */
+.whatsapp {
+    background-color: #25d366;
+}
+
+.whatsapp img {
+    width: 35px;
+    height: 35px;
 }
 
 /* ================= RESPONSIVIDADE MOBILE ================= */
@@ -564,5 +621,17 @@ h2{
     /* Remove padding padrão da lista */
     .lista ul {
         padding: 0;
+    }
+}
+
+/* Ajuste para mobile para não cobrir conteúdo */
+@media (max-width: 768px) {
+    .botoes-flutuantes {
+        bottom: 10px;
+        right: 10px;
+    }
+    .btn-flutuante {
+        width: 50px;
+        height: 50px;
     }
 }

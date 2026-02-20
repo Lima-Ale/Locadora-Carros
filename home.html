@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+     <header class="header">
       <nav class="menu">
-        <img class="logomarca" src="./assets/img/logo_transparente.png" alt="logo" />
-        <input type="checkbox" id="menu-check" />
-        <label for="menu-check" class="menu-burguer">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-
-        <ul class="links-navegacao">
-          <li><a href="#">Entrar</a></li>
-          <li class="cadastrar"><a href="#">Cadastrar</a></li>
-        </ul>
+        <img class="logomarca" src="./assets/img/logo3.png" alt="logo" />
+        <h2 class="nome-marca">Carro Certo</h2>
       </nav>
     </header>
+
+    <section class="faixa-acesso">
+      <div class="container-acesso">
+        <ul class="links-navegacao">
+          <li><a href="#" class="btn-entrar">Entrar</a></li>
+          <li class="cadastrar"><a href="#">Cadastrar</a></li>
+        </ul>
+      </div>
+    </section>
     <section class="painel-principal">
       <div class="img-petz">
         <div class="fotos-da-esquerda">
@@ -94,6 +93,15 @@
         </div>
       </div>
     </section>
+
+    <div class="botoes-flutuantes">
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="btn-flutuante voltar">
+        Voltar
+      </button>
+      <a href="https://wa.me/seunumeroaqui" target="_blank" class="btn-flutuante whatsapp">
+        <img src="./assets/img/zap.png" alt="WhatsApp">
+      </a>
+    </div>
     <!--Footer-->
     <footer class="rodape">
         <div class="conteudo-rodape">
@@ -106,7 +114,7 @@
                    <li>Nossos Valores</li>
                 </ul>
              </div>
-             <img class="logomarca" src="./assets/img/logo_transparente.png" alt="">
+             <img class="logomarca" src="./assets/img/logo3.png" alt="">
              <div class="redes-sociais">
                 <p>Nossas redes sociais:</p>
                 <div class="logotipos">
